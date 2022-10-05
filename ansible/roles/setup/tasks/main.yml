@@ -1,0 +1,17 @@
+---
+- name: Apt update/upgrade
+  apt:
+    update_cache: yes
+    upgrade: dist
+    force_apt_get: yes
+
+- name: Install wget
+  apt:
+    name: wget
+
+- name: Install gpg
+  apt:
+    name: gpg
+
+
+
